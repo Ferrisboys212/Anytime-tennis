@@ -9,28 +9,56 @@
       margin: 0;
       background: #f4f4f4;
     }
+
     header {
       background: #1e7f3f;
       color: white;
       padding: 40px;
       text-align: center;
     }
+
     section {
       padding: 40px;
       max-width: 900px;
-      margin: auto;
+      margin: 20px auto;
       background: white;
-      margin-bottom: 20px;
       border-radius: 10px;
     }
+
     h2 {
       color: #1e7f3f;
+      text-align: center;
     }
+
+    /* BIO BOX */
+    .bio-box {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    /* GALLERY */
+    .gallery {
+      text-align: center;
+    }
+
+    .gallery img {
+      width: 250px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    /* PRICING */
     .pricing {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
     }
+
     .card {
       flex: 1;
       min-width: 250px;
@@ -38,7 +66,9 @@
       padding: 20px;
       border-radius: 8px;
       border: 1px solid #ddd;
+      text-align: center;
     }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -47,6 +77,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -56,26 +87,34 @@
 
 <section>
   <h2>About Us</h2>
-  <p>
-    Tennis Mates provides high-quality tennis instruction for players of all ages and skill levels.
-    Whether you're a beginner or looking to improve your game, we offer flexible and professional coaching.
-  </p>
+
+  <div class="bio-box">
+    <p>
+      Bryce (left) and Jordan are both USPTA certified coaches with over 10 years of experience
+      in the tennis industry. They have worked at country clubs, academies, and commercial clubs
+      across the country.
+    </p>
+
+    <p>
+      Both graduated from Ferris State University with degrees in Professional Tennis Management.
+      As 4.5/5.0 level players, they are passionate about teaching and continuing to improve their own games.
+    </p>
+
+    <p>
+      They have extensive experience running adult classes, ALTA practices, junior programs,
+      and specialize in private lessons.
+    </p>
+  </div>
 </section>
-<h2>Gallery</h2>
-<img src="IMG_4570.jpg" alt="Tennis action" width="300">
-<img src="IMG_4571.jpg" alt="Playing tennis" width="300">
-  <h2>About Us</h2>
-<p>
-Bryce(left) and Jordan are both USPTA certified coaches who have worked 
-  in the tennis industry for the last 10 years all around the country.
-  Including country clubs, academies, and commercial clubs. 
-  Both graduated from Ferris State University with a degree 
-  in Professional Tennis Management. They are 4.5/5.0 level players
-  who are passionate about teaching and continuing to improve their 
-  own games as well. Have vast experience with running adult classes,
-  Alta practices, junior classes, and excel in private lessons.
-  
-</p>
+
+<section>
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="IMG_4570.JPG" alt="Tennis action">
+    <img src="IMG_4571.JPG" alt="Playing tennis">
+  </div>
+</section>
+
 <section>
   <h2>What We Offer</h2>
   <div class="pricing">
@@ -120,6 +159,9 @@ Bryce(left) and Jordan are both USPTA certified coaches who have worked
 <footer>
   <p>© 2026 Tennis Mates</p>
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>
