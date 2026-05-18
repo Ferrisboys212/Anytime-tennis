@@ -42,15 +42,26 @@
     }
 
     /* GALLERY */
-    .gallery {
-      text-align: center;
-    }
+   .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 
-    .gallery img {
-      width: 250px;
-      margin: 10px;
-      border-radius: 10px;
-    }
+.gallery-item {
+  text-align: center;
+}
+
+.gallery img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.gallery-item p {
+  margin-top: 8px;
+  font-weight: bold;
+}
 
     /* PRICING */
     .pricing {
@@ -115,14 +126,26 @@
 
 <section>
   <h2>Gallery</h2>
+
   <div class="gallery">
-    <img src="IMG_4570.jpg" alt="Tennis action">
-    <img src="IMG_4571.jpg" alt="Playing tennis">
-    <img src="1743.JPG" alt="booger">
+
+    <div class="gallery-item">
+      <img src="IMG_4570.jpg" alt="Tennis action">
+      <p>Tennis action at Atlanta</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="IMG_4571.jpg" alt="Playing tennis">
+      <p>Competitive match play</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="1743.JPG" alt="ALTA City Champions">
+      <p>2025 ALTA City Champions</p>
+    </div>
+
   </div>
 </section>
-
-<section>
   <h2>What We Offer</h2>
   <div class="pricing">
     <div class="card">
